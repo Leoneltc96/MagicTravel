@@ -1,0 +1,44 @@
+<div class="relative overflow-hidden rounded-box" (mouseenter)="pauseAutoplay()" (mouseleave)="resumeAutoplay()">
+  <div
+    class="flex w-full"
+    [ngClass]="trackClass()"
+    [style.width]="trackWidth()"
+    [style.transform]="trackTransform()"
+    (transitionend)="onTrackTransitionEnd($event)"
+  >
+    @for (src of slidesForRender(); track $index) {
+      <div class="shrink-0 px-2 hover:scale-105 transition-transform duration-300 ease-in-out" [style.flex]="itemFlex()">
+        <button type="button" class="block cursor-pointer" (click)="openViewerFromRenderIndex($index)">
+          <img class="w-full aspect-[2/3] rounded-box" [src]="src" alt="Flayer" loading="lazy" />
+        </button>
+      </div>
+    }
+  </div>
+
+  <button type="button" class="btn btn-ghost absolute left-2 top-1/2 -translate-y-1/2 bg-base-100/80 disabled:opacity-50" aria-label="Anterior" (click)="prev()" [disabled]="isAnimating()">
+    <fa-icon [icon]="chevronLeft"/>
+  </button>
+  <button type="button" class="btn btn-ghost absolute right-2 top-1/2 -translate-y-1/2 bg-base-100/80 disabled:opacity-50" aria-label="Siguiente" (click)="next()" [disabled]="isAnimating()">
+    <fa-icon [icon]="chevronRight"/>
+  </button>
+</div>
+
+@if (viewerOpen()) {
+  <div class="fixed inset-0 z-50">
+    <button type="button" class="absolute inset-0 bg-black/70" (click)="closeViewer()"></button>
+    <div class="relative h-full w-full flex items-center justify-center p-4">
+      <div class="relative max-h-[90vh] max-w-[90vw]">
+        <img class="max-h-[90vh] max-w-[90vw] object-contain rounded-box" [src]="viewerSrc()" alt="Flayer" />
+        <button type="button" class="btn btn-circle btn-ghost absolute -top-2 -right-2 bg-base-100" (click)="closeViewer()">
+          ✕
+        </button>
+        <button type="button" class="btn btn-circle btn-ghost absolute left-2 top-1/2 -translate-y-1/2 bg-base-100" (click)="prevViewer()">
+          <fa-icon [icon]="chevronLeft"/>
+        </button>
+        <button type="button" class="btn btn-circle btn-ghost absolute right-2 top-1/2 -translate-y-1/2 bg-base-100" (click)="nextViewer()">
+          <fa-icon [icon]="chevronRight"/>
+        </button>
+      </div>
+    </div>
+  </div>
+}

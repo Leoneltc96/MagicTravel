@@ -1,0 +1,35 @@
+<div class="container mx-auto">
+  <h1 class="text-3xl text-center max-w-500 font-bold">Detalles del viaje</h1>
+  <div class="">
+    @if (urlIframe()) {
+      <iframe
+        [src]="urlIframe()!"
+        class="w-full"
+        frameborder="0"
+      ></iframe>
+    } @else {
+      <div class="p-6 text-center text-base-content/70">
+        No se pudo cargar el detalle del viaje.
+      </div>
+    }
+  </div>
+</div>
+
+<!-- 
+txtColor = Color del Texto
+aColor = Color de links
+ahColor = Color de links en estado "hover"
+thBG = Color del encabezado de las tablas
+thTxColor = Color del texto del encabezado de las tablas
+ff = Tipografía (Indicar el número de acuerdo a la siguiente lista)
+
+txtColor = Color del texto.
+lblTPaq = Color del título del Item.
+lblTRange = Color de la etiqueta de filtros.
+lblNumRange = Color de rangos de números en los filtros.
+itemBack = Color de fondo del item.
+ItemHov = Color de fondo del item al pasar el cursor por encima.
+txtColorHov = Color del texto al pasar el cursor por encima.
+ff = Tipografía (Indicar el número de acuerdo a la siguiente lista)
+FA003F
+-->

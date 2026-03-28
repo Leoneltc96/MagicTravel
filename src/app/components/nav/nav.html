@@ -1,0 +1,86 @@
+<nav class="flex items-center justify-between">
+  @if (isHome()) {
+    <div class="hero min-h-screen" #hero id="nav_magicTravel">
+      <div
+        class="hero-overlay bg-gradient-to-b from-black/80 via-black/50 to-black/80 md:from-black/60 md:via-black/30 md:to-black/60"
+      ></div>
+      <div class="hero-content text-neutral-content text-start w-full px-6 sm:px-10 lg:px-0">
+        <div class="max-w-[710px]">
+          <h1 class="mb-5 lg:text-5xl md:text-4xl text-3xl font-bold" animate.enter="txt-in">
+            Viajar es ordinario.
+            <br />
+            Con nosotros, es 
+            <span class="text-rotate">
+              <span class="justify-items-start">
+                <span class="text-[var(--color-secondary)]">magico.</span>
+                <span class="text-[var(--color-secondary)]">inolvidable.</span>
+                <span class="text-[var(--color-secondary)]">extraordinario.</span>
+              </span>
+            </span>
+          </h1>
+          <p class="mb-5 text-lg lg:text-xl" animate.enter="txt-in-rigth">
+            Escápate a los lugares más increíbles del mundo.
+          </p>
+          <div class="w-[100%] flex justify-center align-center">
+            <tm-button type="secondary" animate.enter="txt-in">¡Me quiero ir ya!</tm-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+
+  <div
+    class="navbar fixed top-0 left-0 right-0 max-h-[100px] px-5 z-10"
+    [ngClass]="{ 'bg-base-100': !isHome() || isScrolled(), 'shadow-md': !isHome() || isScrolled() }"
+  >
+    <div class="navbar-start">
+      <button routerLink="/" class="cursor-pointer">
+        @if (!isHome() || isScrolled()) {
+          <img
+            ngSrc="img/logos/magicTravel.png"
+            alt="Magic Travel"
+            width="120"
+            height="132"
+            animate.enter="fade-in"
+            animate.leave="fade-out"
+            priority
+          />
+        } @else {
+          <img
+            ngSrc="img/logos/magicTravel_white.png"
+            alt="Magic Travel"
+            width="150"
+            height="132"
+            animate.enter="fade-in"
+            animate.leave="fade-out"
+            priority
+          />
+        }
+      </button>
+    </div>
+
+    <div class="navbar-end">
+      <div class="drawer drawer-end">
+        <input id="my-drawer-5" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content justify-self-end">
+          <!-- Page content here -->
+          <label for="my-drawer-5" class="drawer-button btn btn-ghost hover:bg-transparent">
+            <fa-icon
+              [icon]="faBars"
+              class="text-[30px]"
+              [ngClass]="{ 'icon-secondary-color': isHome() && !isScrolled() }"
+            ></fa-icon>
+          </label>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-5" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="menu bg-base-200 min-h-full w-80 p-4">
+            <!-- Sidebar content here -->
+            <li><a>Sidebar Item 1</a></li>
+            <li><a>Sidebar Item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

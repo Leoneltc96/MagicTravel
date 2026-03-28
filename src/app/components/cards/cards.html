@@ -1,0 +1,25 @@
+<div class="card bg-base-100 shadow-sm max-w-[300px]">
+  <div class="max-h-[400px] overflow-hidden">
+    <figure>
+      <img [src]="cardItem().img" [alt]="cardItem().title" />
+    </figure>
+  </div>
+  <div class="card-body py-2">
+    <h2 class="card-title h-[54px]">{{ cardItem().title }}</h2>
+    <p class="text-sm italic text-start">
+      {{ cardItem().days }} dias / {{ cardItem().nights }} noches
+    </p>
+    <p class="text-center text-4xl font-semibold">
+      <span class="text-xs">Desde </span>
+      {{ cardItem().price | currency: 'USD' : 'symbol' : '1.0-2' }}
+    </p>
+
+    <p class="mt-[-10px] text-sm text-end">Tax: {{ cardItem().tax | currency: 'USD' : 'symbol' : '1.0-2' }}</p>
+    <div class="card-actions mt-3 w-full">
+      <button class="btn bg-[var(--color-secondary)] w-full flex items-center justify-center hover:transform hover:scale-105 transition-transform duration-300" routerLink="/details-trip/{{ cardItem().clv }}">
+        <fa-icon [icon]="faSuitcase" class="mr-2"></fa-icon>
+        Explorar destino
+      </button>
+    </div>
+  </div>
+</div>

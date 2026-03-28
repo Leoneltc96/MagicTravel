@@ -1,0 +1,26 @@
+<div class="bg-[var(--color-primary)] gap-6 w-full py-6">
+  <div class="container mx-auto">
+    <!-- @for(item of items; track item.title){
+            <card [cardItem]="item" />
+        } -->
+
+    <div class="carousel rounded-box w-full gap-2">
+      @for (item of featuredOffers$.value(); track item.clv; let id = $index) {
+        <div class="carousel-item rounded-box">
+          <card
+            id="slide{{ id }}"
+            [cardItem]="{
+              title: item.nombre || '',
+              price: item?.slidesmall?.[0]?.desde || 0,
+              days: item?.slidesmall?.[0]?.dias || '',
+              nights: item?.slidesmall?.[0]?.noches || '',
+              tax: item?.slidesmall?.[0]?.imp || 0,
+              img: item?.slidemobil || '',
+              clv: item.clv || '',
+            }"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</div>

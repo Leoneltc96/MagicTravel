@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+button{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.tm-primary{
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.tm-secondary{
+  background-color: var(--color-secondary);
+  color: #000;
+}

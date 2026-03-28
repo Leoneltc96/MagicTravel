@@ -1,0 +1,8 @@
+{
+  "/mtmediacafe": {
+    "target": "https://cafe-mt.b-cdn.net",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  }
+}

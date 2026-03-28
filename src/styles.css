@@ -1,3 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+@plugin "daisyui";
+
+:root {
+  --color-primary: #6B92E5;
+  --color-secondary: #FFD900;
+}
+body{
+  min-height: 100dvh;
+}
+
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+iframe{
+  height: calc(100vh - 140px);
+}
