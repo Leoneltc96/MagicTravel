@@ -33,7 +33,9 @@ export class AppService {
   private readonly http = inject(HttpClient);
 
   // Usamos la ruta local para que pase por el proxy del dev-server y evitar CORS.
-  private readonly promosXmlUrl = '/mtmediacafe/mega-slider/xml/promos.xml'
+  // private readonly promosXmlUrl = '/mtmediacafe/mega-slider/xml/promos.xml'
+  private readonly promosXmlUrl = 'https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/xml/promos.xml'
+
 
   // Convierte strings numéricos del XML a number.
   // Ejemplos que soporta: "1900", "1,900", "$1,900", " 1,900 ".
