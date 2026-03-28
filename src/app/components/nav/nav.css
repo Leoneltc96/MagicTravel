@@ -17,7 +17,7 @@ nav{
 
 #nav_magicTravel{
   background: none;
-  background-image: url('/img/banners/hero-image.jpg');
+  background-image: url('img/banners/hero-image.jpg');
   background-position: center;
   background-size: cover;
   width: 100wh;
