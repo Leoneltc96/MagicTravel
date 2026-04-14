@@ -1,0 +1,53 @@
+<div class="">
+  <div
+    class=" p-5 text-center "
+    style="background: linear-gradient(160deg, #94a3b8 0%, #f59e0b 35%, #fb7185 70%, #94a3b8 100%)"
+  >
+    <div class="mx-auto max-w-md shadow-xl rounded-[36px] p-3">
+      <div class="mx-auto h-24 w-24 overflow-hidden rounded-full ring-4 ring-white/60">
+        <img
+          ngSrc="img/logos/magicTravel.png"
+          width="96"
+          height="96"
+          alt="Magic Travel"
+          class="h-full w-full object-contain bg-white"
+        />
+      </div>
+
+      <h1 class="mt-4 text-2xl font-semibold text-white">Magic Travel</h1>
+      <p class="mt-1 text-white/90">Encuentra tu próximo destino</p>
+
+      <div class="mt-8 grid gap-4">
+        @for (item of botones; track item.id) {
+          <a
+            class="btn btn-block border-none bg-white text-base-content shadow-md hover:bg-white/95"
+            [routerLink]="item.url"
+          >
+            {{ item.title }}
+          </a>
+        }
+      </div>
+
+      <div class="mt-10 flex items-center justify-center gap-8 text-white">
+        <a
+          href="https://www.instagram.com/_magic.travel_"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-90"
+          aria-label="Instagram"
+        >
+          <fa-icon [icon]="faInstagram" class="text-2xl"></fa-icon>
+        </a>
+        <a
+          href="https://wa.me/525561854542"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-90"
+          aria-label="WhatsApp"
+        >
+          <fa-icon [icon]="faWhatsapp" class="text-2xl"></fa-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

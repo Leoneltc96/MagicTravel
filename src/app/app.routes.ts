@@ -15,12 +15,21 @@ export const routes: Routes = [
                 loadComponent: () => import('./pages/details/details.page').then((mod) => mod.DetailsPage),
             },
             {
+                path: 'travel/:country',
+                loadComponent: () => import('./pages/details/details.page').then((mod) => mod.DetailsPage),
+            },
+
+            {
                 path: '',
                 redirectTo: '/home',
                 pathMatch: 'full',
             }
         ],
     },
+                {
+                path: 'explore',
+                loadComponent: () => import('./pages/explorar/explorar.page').then((mod) => mod.ExplorarPage),
+            },
     {
         path: '**',
         redirectTo: '/home',

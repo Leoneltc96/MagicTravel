@@ -1,6 +1,11 @@
 <nav class="flex items-center justify-between">
   @if (isHome()) {
-    <div class="hero min-h-screen" #hero id="nav_magicTravel">
+    <div
+      class="hero min-h-screen"
+      #hero
+      id="nav_magicTravel"
+      [style.backgroundImage]="heroBackgroundImage"
+    >
       <div
         class="hero-overlay bg-gradient-to-b from-black/80 via-black/50 to-black/80 md:from-black/60 md:via-black/30 md:to-black/60"
       ></div>
@@ -76,8 +81,36 @@
           <label for="my-drawer-5" aria-label="close sidebar" class="drawer-overlay"></label>
           <ul class="menu bg-base-200 min-h-full w-80 p-4">
             <!-- Sidebar content here -->
-            <li><a>Sidebar Item 1</a></li>
-            <li><a>Sidebar Item 2</a></li>
+            @for (item of navArray; track item.id) {
+              <li>
+                @if (item.destinos && item.destinos.length > 0) {
+                  <details close>
+                    <summary>
+                      @if (item.icon) {
+                        <fa-icon [icon]="objectIcons[item.icon]" class="text-[30px]"></fa-icon>
+                      }
+                      {{ item.title }}
+                    </summary>
+                    <ul>
+                      @for (destino of item.destinos; track destino.id) {
+                        <li>
+                          <a routerLink="{{ destino.url }}" routerLinkActive="menu-active" (click)="closeDrawer()">{{
+                            destino.title
+                          }}</a>
+                        </li>
+                      }
+                    </ul>
+                  </details>
+                } @else {
+                  <a routerLink="{{ item.url }}" routerLinkActive="menu-active" (click)="closeDrawer()">
+                    @if (item.icon) {
+                      <fa-icon [icon]="objectIcons[item.icon]" class="text-[30px]"></fa-icon>
+                    }
+                    <span class="ml-2">{{ item.title }}</span>
+                  </a>
+                }
+              </li>
+            }
           </ul>
         </div>
       </div>
