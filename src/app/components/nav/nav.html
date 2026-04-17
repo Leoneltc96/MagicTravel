@@ -69,17 +69,18 @@
         @for (item of navArray; track item.id) {
           @if (item.destinos && item.destinos.length > 0) {
             <li>
-              <div class="relative hover:bg-base-900"
-                [class.hover:bg-transparent]="!!item.destinos"
-              
+              <div class="relative"
               >
-                <button type="button" class="btn btn-ghost"
+                <button type="button" class="
+
+                "
                 (click)="toggleDestinosDropdown()">
                   @if (item.icon) {
                     <fa-icon [icon]="objectIcons[item.icon]" class="text-[22px]"></fa-icon>
                   }
                   <span class="ml-2"
                   [class.text-white]="isHome() && !isScrolled()"
+
                   >{{ item.title }}
                 <fa-icon [icon]="faDown"/> 
                 </span>
