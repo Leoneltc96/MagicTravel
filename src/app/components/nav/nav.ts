@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, effect, ElementRef, HostListener, inject, signal } from '@angular/core';
 import { NgOptimizedImage, NgClass } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faBars, faGlobe, faHouse, faPlane, faTags } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faBars, faGlobe, faHouse, faPhone, faPlane, faTags } from '@fortawesome/free-solid-svg-icons';
 import {  TmButton } from '../tm-button/tm-button';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { ViewChild } from '@angular/core';
@@ -17,6 +17,7 @@ import { navArray } from './navArray';
 })
 export class Nav{
    readonly faBars = faBars;
+   readonly faDown = faAngleDown
    readonly heroBackgroundImage = 'url("img/banners/hero-image.jpg")';
 
    readonly objectIcons: any = {
@@ -24,6 +25,7 @@ export class Nav{
     faGlobe: faGlobe,
     faTags: faTags,
     faPlane: faPlane,
+    faPhone: faPhone,
    }
   
   @ViewChild('hero') hero!: ElementRef;
@@ -32,6 +34,7 @@ export class Nav{
 
   protected readonly isHome = signal(false);
   protected readonly navArray = navArray;
+  protected readonly destinosOpen = signal(false);
 
 
 
@@ -46,6 +49,7 @@ export class Nav{
     const sub = this.router.events.subscribe((event) => {
       if (!(event instanceof NavigationEnd)) return;
       this.setIsHomeFromUrl(event.urlAfterRedirects);
+      this.destinosOpen.set(false);
     });
 
     this.destroyRef.onDestroy(() => sub.unsubscribe());
@@ -64,5 +68,13 @@ export class Nav{
   
   closeDrawer() {
     document.getElementById('my-drawer-5')?.click();
+  }
+
+  protected toggleDestinosDropdown() {
+    this.destinosOpen.update((v) => !v);
+  }
+
+  protected closeDestinosDropdown() {
+    this.destinosOpen.set(false);
   }
 }

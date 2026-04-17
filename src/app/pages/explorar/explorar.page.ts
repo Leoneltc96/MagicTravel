@@ -6,7 +6,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { navArray } from '../../components/nav/navArray';
 
-type LinkItem = { id: number; title: string; url: string };
+type LinkItem = { id: number; title: string; icon: string; url: string };
 
 @Component({
   selector: 'app-explorar-page',

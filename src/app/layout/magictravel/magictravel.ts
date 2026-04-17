@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faTiktok, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Nav } from '../../components/nav/nav';
 import { Footer } from '../../components/footer/footer';
 import { RouterOutlet } from '@angular/router';
@@ -21,4 +21,6 @@ export class Magictravel {
   public readonly faInstagram = faInstagram;
 
   public readonly faWhatsapp = faWhatsapp;
+  public readonly faFacebook = faFacebook;
+  public readonly faTiktok = faTiktok;
 }

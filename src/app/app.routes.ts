@@ -18,6 +18,10 @@ export const routes: Routes = [
                 path: 'travel/:country',
                 loadComponent: () => import('./pages/details/details.page').then((mod) => mod.DetailsPage),
             },
+            {
+                path: 'contact',
+                loadComponent: () => import('./pages/contacto/contacto.page').then((mod) => mod.ContactoPage),
+            },
 
             {
                 path: '',

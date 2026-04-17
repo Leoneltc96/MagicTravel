@@ -1,0 +1,137 @@
+<section class=" py-10 px-4">
+
+
+  <div class="mx-auto max-w-4xl mb-8">
+    <div class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+      <div class="card-body">
+
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div class="flex-1">
+            <h2 class="card-title text-2xl">¿Necesitas ayuda para tu viaje?</h2>
+            <p class="text-base-content/70 mt-2">
+              Estamos aquí para resolver tus dudas, ayudarte a elegir el mejor destino y diseñar la experiencia perfecta.
+              Habla con un asesor de viajes.
+            </p>
+          </div>
+          <div class="flex flex-col items-start md:items-end gap-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">📞</span>
+              <a href="tel:+525561854542" class="text-lg font-semibold text-primary hover:underline">
+                +52 56 1854 5678
+              </a>
+            </div>
+            <div class="flex gap-4">
+              <a
+                href="https://wa.me/525561854542"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-ghost btn-circle"
+                aria-label="WhatsApp"
+              >
+                <fa-icon [icon]="faWhatsapp" class="text-2xl"></fa-icon>
+              </a>
+              <a
+                href="https://www.instagram.com/_magic.travel_"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-ghost btn-circle"
+                aria-label="Instagram"
+              >
+                <fa-icon [icon]="faInstagram" class="text-2xl"></fa-icon>
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-ghost btn-circle"
+                aria-label="Facebook"
+              >
+                <fa-icon [icon]="faFacebook" class="text-2xl"></fa-icon>
+              </a>
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-ghost btn-circle"
+                aria-label="TikTok"
+              >
+                <fa-icon [icon]="faTiktok" class="text-2xl"></fa-icon>
+              </a>
+            </div>
+            <div class="text-sm text-base-content/60 mt-2">
+              ✉️ <span class="font-mono">brendasamperio2316@gmail.com</span><br>
+              🕘 Lun a Vie 9:00–19:00 · Sáb 10:00–14:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-4xl">
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body">
+        <p class="text-base-content/70">Dejanos tus datos y te contactamos.</p>
+
+
+
+        <form class="mt-4 space-y-4"action="https://formsubmit.co/brendasamperio2316@gmail.com" method="POST" >
+          <!-- <form action="https://formsubmit.co/your@email.com" method="POST" /> -->
+          <label class="form-control w-full">
+            <span class="label-text font-medium mb-1">Nombre</span>
+            <input
+              type="text"
+              class="input input-bordered w-full"
+              placeholder="Tu nombre"
+              [formField]="contactoForm.nombre"
+            />
+            @if (contactoForm.nombre().touched() && contactoForm.nombre().invalid()) {
+              <span class="text-error text-sm mt-1">El nombre es obligatorio.</span>
+            }
+          </label>
+
+          <label class="form-control w-full">
+            <span class="label-text font-medium mb-1">Correo</span>
+            <input
+              type="email"
+              class="input input-bordered w-full"
+              placeholder="tu@correo.com"
+              [formField]="contactoForm.correo"
+            />
+            @if (contactoForm.correo().touched() && contactoForm.correo().invalid()) {
+              @if (!contactoForm.correo().value()) {
+                <span class="text-error text-sm mt-1">El correo es obligatorio.</span>
+              } @else {
+                <span class="text-error text-sm mt-1">Ingresa un correo valido.</span>
+              }
+            }
+          </label>
+
+          <label class="form-control w-full">
+            <span class="label-text font-medium mb-1">Mensaje</span>
+            <textarea
+              rows="6"
+              class="textarea textarea-bordered w-full"
+              placeholder="Escribe tu mensaje"
+              [formField]="contactoForm.mensaje"
+            ></textarea>
+            @if (contactoForm.mensaje().touched() && contactoForm.mensaje().invalid()) {
+              <span class="text-error text-sm mt-1">El mensaje es obligatorio.</span>
+            }
+          </label>
+
+          <button type="submit" class="btn bg-[var(--color-secondary)] text-black w-full border-none">
+            Enviar mensaje
+          </button>
+        </form>
+
+
+        @if (enviado()) {
+          <div class="alert alert-success mt-4">
+            <span>Gracias, recibimos tu mensaje.</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

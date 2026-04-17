@@ -141,6 +141,6 @@ export class DetailsPage {
   }
   
   protected redirectWhatsApp() {
-    window.open('https://wa.me/525555555555', '_blank');
+    window.open('https://wa.me/525561854542', '_blank');
   }
 }
