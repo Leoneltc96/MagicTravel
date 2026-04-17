@@ -69,8 +69,8 @@
         @for (item of navArray; track item.id) {
           @if (item.destinos && item.destinos.length > 0) {
             <li>
-              <div class="relative"
-                [class.hover:bg-base-100]="item.destinos"
+              <div class="relative hover:bg-base-900"
+                [class.hover:bg-transparent]="!!item.destinos"
               
               >
                 <button type="button" class="btn btn-ghost"
