@@ -78,7 +78,7 @@
         <form class="mt-4 space-y-4"action="https://formsubmit.co/brendasamperio2316@gmail.com" method="POST" >
           <!-- <form action="https://formsubmit.co/your@email.com" method="POST" /> -->
           <label class="form-control w-full">
-            <span class="label-text font-medium mb-1">Nombre</span>
+            <span class="label-text font-medium mb-1">Nombre:*</span>
             <input
               type="text"
               class="input input-bordered w-full"
@@ -89,9 +89,10 @@
               <span class="text-error text-sm mt-1">El nombre es obligatorio.</span>
             }
           </label>
+          <br>
 
           <label class="form-control w-full">
-            <span class="label-text font-medium mb-1">Correo</span>
+            <span class="label-text font-medium mb-1">Correo:*</span>
             <input
               type="email"
               class="input input-bordered w-full"
@@ -106,9 +107,9 @@
               }
             }
           </label>
-
+<br>
           <label class="form-control w-full">
-            <span class="label-text font-medium mb-1">Mensaje</span>
+            <span class="label-text font-medium mb-1">Mensaje:*</span>
             <textarea
               rows="6"
               class="textarea textarea-bordered w-full"
@@ -119,8 +120,11 @@
               <span class="text-error text-sm mt-1">El mensaje es obligatorio.</span>
             }
           </label>
+          <br>
 
-          <button type="submit" class="btn bg-[var(--color-secondary)] text-black w-full border-none">
+          <button type="submit" class="btn bg-[var(--color-secondary)] text-black w-full border-none disabled:bg-[#FFEF99] disabled:cursor-not-allowed disabled:text-white"
+          [disabled]="contactoForm().invalid()"
+          >
             Enviar mensaje
           </button>
         </form>
