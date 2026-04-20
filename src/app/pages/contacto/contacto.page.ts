@@ -24,7 +24,7 @@ export class ContactoPage {
   protected readonly contactoForm = form(this.model, (path) => {
     required(path.nombre, { message: 'El nombre es obligatorio.' });
     required(path.correo, { message: 'El correo es obligatorio.' });
-    email(path.correo, { message: 'Ingresa un correo valido.' });
+    email(path.correo, { message: 'Ingresa un correo válido.' });
     required(path.mensaje, { message: 'El mensaje es obligatorio.' });
   });
 
