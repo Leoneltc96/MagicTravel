@@ -141,6 +141,6 @@ export class DetailsPage {
   }
   
   protected redirectWhatsApp() {
-    window.open('https://wa.me/525554921008?text=%C2%A1Hola%20Magic%20Travel!%20Estoy%20listo%20para%20planear%20mi%20siguiente%20aventura.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20paquetes%20disponibles.', '_blank');
+    window.open('https://wa.me/525554921008?text=%C2%A1Hola%20Magic%20Travel!%20Estoy%20list@%20para%20planear%20mi%20siguiente%20aventura.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20paquetes%20disponibles.', '_blank');
   }
 }
