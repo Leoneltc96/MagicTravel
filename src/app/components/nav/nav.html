@@ -94,7 +94,7 @@
                     @for (destino of item.destinos; track destino.id) {
                       <li >
                         <a [routerLink]="destino.url" (click)="closeDestinosDropdown()" class="pl-[10vh]">
-                          <img [src]="'/img/icons/nav/' + destino.img" alt="" class="w-15">
+                          <img [src]="'img/icons/nav/' + destino.img" alt="" class="w-15">
                           {{ destino.title }}
                         </a>
                       </li>
