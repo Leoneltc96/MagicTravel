@@ -2,71 +2,131 @@
 <megapromo>
 <nombre>Mega Europa</nombre>
 <clv>12017</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo1.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/europa/12017-mega-europa-03_67d355c9e6e24.webp?width=300</slidemobil>
-<slidesmall dias="17" noches="15" desde="1,499" imp="799">https://one.cdnmega.com/images/destinos/promos/europa/12017-mega-europa-03_67d355c9e6e24.webp?width=300</slidesmall>
-</megapromo>
-<megapromo>
-<nombre>Capitales con Glamour by Exa</nombre>
-<clv>16020</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo2.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/europa/img-0519_69b5b04c41839.webp?width=300</slidemobil>
-<slidesmall dias="10" noches="8" desde="1,399" imp="899">https://one.cdnmega.com/images/destinos/promos/europa/img-0519_69b5b04c41839.webp?width=300</slidesmall>
-</megapromo>
-<megapromo>
-<nombre>Con Sabor a Colombia</nombre>
-<clv>52179</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo3.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/sudamerica/1080-con-sabor-a-colombia_69a9c278df1e7.webp?width=300</slidemobil>
-<slidesmall dias="8" noches="7" desde="899" imp="399">https://one.cdnmega.com/images/destinos/promos/sudamerica/1080-con-sabor-a-colombia_69a9c278df1e7.webp?width=300</slidesmall>
-</megapromo>
-<megapromo>
-<nombre>En el Corazón de Asia: Corea, Japón y China</nombre>
-<clv>30222</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo4.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/asia/banner-30222-enelcorazoundeasia-1080x1920_696e86628305c.webp?width=300</slidemobil>
-<slidesmall dias="22" noches="19" desde="3,499" imp="999">https://one.cdnmega.com/images/destinos/promos/asia/banner-30222-enelcorazoundeasia-1080x1920_696e86628305c.webp?width=300</slidesmall>
-</megapromo>
-<megapromo>
-<nombre>Mega China</nombre>
-<clv>30023</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo5.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/asia/mega-china-1080x1920_69274d9153350.webp?width=300</slidemobil>
-<slidesmall dias="10" noches="8" desde="1,599" imp="999">https://one.cdnmega.com/images/destinos/promos/asia/mega-china-1080x1920_69274d9153350.webp?width=300</slidesmall>
-</megapromo>
-<megapromo>
-<nombre>Estrellas de Europa</nombre>
-<clv>16100</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo6.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/europa/16100-1080x1920_69a8c9c930f6c.webp?width=300</slidemobil>
-<slidesmall dias="22" noches="20" desde="2,699" imp="799">https://one.cdnmega.com/images/destinos/promos/europa/16100-1080x1920_69a8c9c930f6c.webp?width=300</slidesmall>
-</megapromo>
-<megapromo>
-<nombre>Gran Tour de Europa</nombre>
-<clv>12019</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo7.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/europa/12019-gran-tour-de-europa-1080x1920-66143e5e704bb-1_67a1d73ae5424.webp?width=300</slidemobil>
-<slidesmall dias="19" noches="17" desde="1,899" imp="799">https://one.cdnmega.com/images/destinos/promos/europa/12019-gran-tour-de-europa-1080x1920-66143e5e704bb-1_67a1d73ae5424.webp?width=300</slidesmall>
-</megapromo>
-<megapromo>
-<nombre>Colores de Sudamérica</nombre>
-<clv>52444</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo8.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/sudamerica/1080x1920_69a1bae993895.webp?width=300</slidemobil>
-<slidesmall dias="15" noches="13" desde="1,999" imp="799">https://one.cdnmega.com/images/destinos/promos/sudamerica/1080x1920_69a1bae993895.webp?width=300</slidesmall>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo1.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/europa/12017-mega-europa-03_67d355c9e6e24.webp?width=300
+</slidemobil>
+<slidesmall dias="17" noches="15" desde="1,499" imp="799">
+https://one.cdnmega.com/images/destinos/promos/europa/12017-mega-europa-03_67d355c9e6e24.webp?width=300
+</slidesmall>
 </megapromo>
 <megapromo>
 <nombre>Japón al Completo</nombre>
 <clv>30197</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo9.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/asia/30197-japon-al-completo-1080x1920_67f69eb428fed.webp?width=300</slidemobil>
-<slidesmall dias="12" noches="9" desde="2,599" imp="999">https://one.cdnmega.com/images/destinos/promos/asia/30197-japon-al-completo-1080x1920_67f69eb428fed.webp?width=300</slidesmall>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo2.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/asia/30197-japon-al-completo-1080x1920_67f69eb428fed.webp?width=300
+</slidemobil>
+<slidesmall dias="12" noches="9" desde="2,599" imp="999">
+https://one.cdnmega.com/images/destinos/promos/asia/30197-japon-al-completo-1080x1920_67f69eb428fed.webp?width=300
+</slidesmall>
+</megapromo>
+<megapromo>
+<nombre>Capitales con Glamour by Exa</nombre>
+<clv>16020</clv>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo3.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/europa/img-0519_69b5b04c41839.webp?width=300
+</slidemobil>
+<slidesmall dias="10" noches="8" desde="1,399" imp="899">
+https://one.cdnmega.com/images/destinos/promos/europa/img-0519_69b5b04c41839.webp?width=300
+</slidesmall>
+</megapromo>
+<megapromo>
+<nombre>En el Corazón de Asia: Corea, Japón y China</nombre>
+<clv>30222</clv>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo4.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/asia/30222-corazonasia-1080x1920_69c591c07d232.webp?width=300
+</slidemobil>
+<slidesmall dias="22" noches="19" desde="3,499" imp="999">
+https://one.cdnmega.com/images/destinos/promos/asia/30222-corazonasia-1080x1920_69c591c07d232.webp?width=300
+</slidesmall>
+</megapromo>
+<megapromo>
+<nombre>¡Viva Europa!</nombre>
+<clv>12018</clv>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo5.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/europa/12527-viva-europa-1080x1920_68e5a9af616e2.webp?width=300
+</slidemobil>
+<slidesmall dias="18" noches="16" desde="1,599" imp="799">
+https://one.cdnmega.com/images/destinos/promos/europa/12527-viva-europa-1080x1920_68e5a9af616e2.webp?width=300
+</slidesmall>
+</megapromo>
+<megapromo>
+<nombre>Mega Europa Iniciando en Barcelona</nombre>
+<clv>12341</clv>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo6.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/europa/12341-mega-europa-desde-barcelona-1080x1920_67ad0b9c88da6.webp?width=300
+</slidemobil>
+<slidesmall dias="17" noches="15" desde="1,499" imp="799">
+https://one.cdnmega.com/images/destinos/promos/europa/12341-mega-europa-desde-barcelona-1080x1920_67ad0b9c88da6.webp?width=300
+</slidesmall>
 </megapromo>
 <megapromo>
 <nombre>Tailandia: Naturaleza, Cultura Y Playa</nombre>
 <clv>30232</clv>
-<slide>https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo10.jpg</slide>
-<slidemobil>https://one.cdnmega.com/images/destinos/promos/asia/30232-tailandia-naturaleza-y-playa-1080x1920-1_68375eb6ec6f8.webp?width=300</slidemobil>
-<slidesmall dias="17" noches="14" desde="1,599" imp="999">https://one.cdnmega.com/images/destinos/promos/asia/30232-tailandia-naturaleza-y-playa-1080x1920-1_68375eb6ec6f8.webp?width=300</slidesmall>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo7.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/asia/30232-tailandia-naturaleza-y-playa-1080x1920-1_68375eb6ec6f8.webp?width=300
+</slidemobil>
+<slidesmall dias="17" noches="14" desde="1,599" imp="999">
+https://one.cdnmega.com/images/destinos/promos/asia/30232-tailandia-naturaleza-y-playa-1080x1920-1_68375eb6ec6f8.webp?width=300
+</slidesmall>
+</megapromo>
+<megapromo>
+<nombre>Gran Tour de Europa</nombre>
+<clv>12019</clv>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo8.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/europa/12019-gran-tour-de-europa-1080x1920-66143e5e704bb-1_67a1d73ae5424.webp?width=300
+</slidemobil>
+<slidesmall dias="19" noches="17" desde="1,899" imp="799">
+https://one.cdnmega.com/images/destinos/promos/europa/12019-gran-tour-de-europa-1080x1920-66143e5e704bb-1_67a1d73ae5424.webp?width=300
+</slidesmall>
+</megapromo>
+<megapromo>
+<nombre>Encantos Asiáticos con Turkish</nombre>
+<clv>30214</clv>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo9.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/asia/30214-encantos-asiaticos-con-turkish-banners-1080x1920-67eb32cd09575_67eb3935624c9.webp?width=300
+</slidemobil>
+<slidesmall dias="15" noches="11" desde="1,899" imp="999">
+https://one.cdnmega.com/images/destinos/promos/asia/30214-encantos-asiaticos-con-turkish-banners-1080x1920-67eb32cd09575_67eb3935624c9.webp?width=300
+</slidesmall>
+</megapromo>
+<megapromo>
+<nombre>Escapada a Cuba</nombre>
+<clv>51095</clv>
+<slide>
+https://cafe-mt.b-cdn.net/mtmediacafe/mega-slider/promo10.jpg
+</slide>
+<slidemobil>
+https://one.cdnmega.com/images/destinos/promos/caribe/banner-51095-escapada-a-cuba-1080x1920-06_68b0fb5cc32d3.webp?width=300
+</slidemobil>
+<slidesmall dias="6" noches="5" desde="599" imp="399">
+https://one.cdnmega.com/images/destinos/promos/caribe/banner-51095-escapada-a-cuba-1080x1920-06_68b0fb5cc32d3.webp?width=300
+</slidesmall>
 </megapromo>
 </megapromos>
